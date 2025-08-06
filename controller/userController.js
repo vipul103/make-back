@@ -23,7 +23,7 @@ module.exports.signup = async (req, res,next) => {
         subject: "Email Activation",
         subject: "Verify Your Email",
         html: `<h2>Hello ${req.body.name}</h2>
-        <p>Verify your email address to complete the signup and login into your <strong>hamart</strong> account.</p>
+        <p>Verify your email address to complete the signup and login into your <strong>Kravelab</strong> account.</p>
   
           <p>This link will expire in <strong> 15 minute</strong>.</p>
   
@@ -31,10 +31,10 @@ module.exports.signup = async (req, res,next) => {
   
           <a href="${secret.client_url}/email-verify/${token}" style="background:#22c55e;color:white;border:1px solid #22c55e; padding: 10px 15px; border-radius: 4px; text-decoration:none;">Verify Account</a>
   
-          <p style="margin-top: 35px;">If you did not initiate this request, please contact us immediately at support@hamart.com</p>
+          <p style="margin-top: 35px;">If you did not initiate this request, please contact us immediately at kravelabco@gmail.com</p>
   
           <p style="margin-bottom:0px;">Thank you</p>
-          <strong>Hamart Team</strong>
+          <strong>Kravelab Team</strong>
            `,
       };
       const message = "Please check your email to verify!";
